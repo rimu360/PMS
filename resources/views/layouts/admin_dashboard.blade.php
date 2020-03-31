@@ -89,6 +89,21 @@
             </li>
 
 
+      <!-- Medicine Category -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-fw fa-medkit"></i>
+              <span>Medicine Category</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <a class="dropdown-item" href="{{route('category_list')}}"><i class="fas fa-fw fa-edit"></i>
+                <span>Category List</span></a>
+              <a class="dropdown-item" href="{{route('add_category')}}"><i class="fas fa-fw fa-plus-circle"></i>
+                <span>Add Category</span></a>
+            </div>
+          </li>
+      <!-- Medicine Category end -->
+
 
       <!-- Medicine -->
           <li class="nav-item dropdown">
@@ -97,29 +112,13 @@
               <span>Medicine</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-              <a class="dropdown-item" href="#"><i class="fas fa-fw fa-folder"></i>
+              <a class="dropdown-item" href="{{route('medicine_list')}}"><i class="fas fa-fw fa-folder"></i>
                 <span>Medicine List</span></a>
-              <a class="dropdown-item" href="#"><i class="fas fa-fw fa-medkit"></i>
+              <a class="dropdown-item" href="{{route('add_medicine')}}"><i class="fas fa-fw fa-medkit"></i>
                 <span>Add Medicine</span></a>
             </div>
           </li>
       <!-- Medicine end -->
-
-      <!-- Medicine Category -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-fw fa-medkit"></i>
-              <span>Medicine Category</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-              <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit"></i>
-                <span>Category List</span></a>
-              <a class="dropdown-item" href="#"><i class="fas fa-fw fa-plus-circle"></i>
-                <span>Add Category</span></a>
-            </div>
-          </li>
-      <!-- Medicine Category end -->
-
 
 <!-- Staff -->
 <li class="nav-item">

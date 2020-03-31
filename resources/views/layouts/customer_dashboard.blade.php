@@ -74,7 +74,16 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
 
-      <!-- Users -->
+
+      <!-- Medicine -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('medicine_list_customer')}}"><i class="fas fa-fw fa-medkit"></i>
+              <span>Medicines</span></a>
+          </li>
+      <!-- Medicine end -->
+
+
+      <!-- Orders -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-fw fa-users"></i>
