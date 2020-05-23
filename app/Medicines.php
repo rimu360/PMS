@@ -25,4 +25,5 @@ class Medicines extends Model
     {
       return $this->hasOne('App\MedicineCategories','id','category_id');
     }
+
 }

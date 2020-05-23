@@ -74,15 +74,10 @@
     <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
 
-    <!-- POS -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="far fa-money-bill-alt"></i>
-              <span>POS</span></a>
-          </li>
 
     <!-- Expenses -->
 
-    <li class="nav-item dropdown">
+    <!-- <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-fw fa-folder"></i>
         <span>Expenses</span>
@@ -93,20 +88,27 @@
         <a class="dropdown-item" href="#"><i class="fas fa-fw fa-folder"></i>
           <span>Expense list</span></a>
             </div>
-    </li>
+    </li> -->
 
       <!-- Stock -->
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-fw fa-chart-area"></i><span>Stock</span></a>
+        <a class="nav-link" href="{{route('stock')}}"><i class="fas fa-fw fa-chart-area"></i><span>Stock</span></a>
       </li>
 
+      <!-- Report -->
+            <li class="nav-item dropdown">
+              <a  class="nav-link" href="{{route('report')}}" >
+                <i class="fas fa-fw fas fa-chart-line"></i>
+                <span>Sales Report</span>
+              </a>
+            </li>
 
         <!-- Profile -->
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link" href="#"><i class="fas fa-fw fa-user-tie"></i>
                         <span>Profile</span></a>
-                    </li>
+                    </li> -->
 
         </ul>
     <!-- Sidebar end -->
@@ -142,7 +144,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>2020</span>
+            <span>PMS-2020</span>
           </div>
         </div>
       </footer>

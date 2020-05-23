@@ -10,6 +10,8 @@
 
   <!-- Custom fonts for this template-->
   <link href="{{ asset('dashboard/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('css/cart.css') }}" rel="stylesheet">
+
 
   <!-- Custom styles for this template-->
   <link href="{{ asset('dashboard/css/admin.css') }}" rel="stylesheet">
@@ -84,25 +86,17 @@
 
 
       <!-- Orders -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-fw fa-users"></i>
-                <span>Orders</span>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                <a class="dropdown-item" href="#"><i class="fas fa-user-md"></i>
-                  <span>Order List</span></a>
-                <a class="dropdown-item" href="#"><i class="fas fa-plus-circle"></i>
-                  <span>New Order</span></a>
-              </div>
-            </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('orders')}}"><i class="fas fa-list"></i>
+          <span>Orders</span></a>
+      </li>
 
   <!-- Profile -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#"><i class="fas fa-fw fa-user-tie"></i>
           <span>Profile</span></a>
-      </li>
+      </li> -->
 
 
     </ul>
@@ -142,7 +136,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>2020</span>
+            <span>PMS-2020</span>
           </div>
         </div>
       </footer>
@@ -164,6 +158,8 @@
   <!-- Custom scripts for all pages-->
   <script src="{{ asset('dashboard/js/admin.min.js') }}" defer></script>
   <script src="{{ asset('js/form_snippet.js') }}" defer></script>
+  <script src="{{ asset('js/cart.js') }}" defer></script>
+
 
 </body>
 

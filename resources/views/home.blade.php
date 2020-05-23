@@ -15,6 +15,8 @@
                     @endif
 
                     You are logged in!
+                    <br>
+                    <a href="{{route('customer')}}">Customer Panel</a>
                 </div>
             </div>
         </div>

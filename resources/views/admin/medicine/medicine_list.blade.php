@@ -2,7 +2,6 @@
 
 @section('content')
 
-<div class="container-fluid">
   <div class="row">
     <div class=" col-auto">
 
@@ -10,7 +9,7 @@
         <div class="card-header text-center">
           <h3>Medicine list </h3>
         </div>
-          <table class="table table-striped">
+          <table class="table table-responsive-auto table-sm">
             <thead class="bg-dark text-light text-center">
               <tr>
                 <th>Name</th>
@@ -19,9 +18,7 @@
                 <th>Purchasing Price</th>
                 <th>Selling Price</th>
                 <th>Quantity</th>
-                <th>Generic Name</th>
                 <th>Company</th>
-                <th>Effects</th>
                 <th>Expiry Date</th>
                 <th></th>
                 <th></th>
@@ -37,9 +34,7 @@
                 <td>{{$medicine->purchase_price}}</td>
                 <td>{{$medicine->selling_price}}</td>
                 <td>{{$medicine->quantity}}</td>
-                <td>{{$medicine->generic_name}}</td>
                 <td>{{$medicine->company}}</td>
-                <td>{{$medicine->effects}}</td>
                 <td>{{$medicine->expiry_date}}</td>
                 <td><a href="{{ route('update_medicine', $medicine->id)}}" class="btn btn-primary">Update</a></td>
                 <td>
@@ -83,7 +78,6 @@
           </div>
           </div>
           </div>
-</div>
 <script type="text/javascript">
 function dd(id)
 {

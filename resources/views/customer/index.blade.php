@@ -1,5 +1,5 @@
 @extends('layouts.customer_dashboard')
 
 @section('content')
-<h1>hello Customer</h1>
+<h1>Hello Customer</h1>
 @endsection

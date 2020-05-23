@@ -78,11 +78,14 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-fw fa-users"></i>
-                <span>Customers</span>
+                <span>Users</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                <a class="dropdown-item" href="#"><i class="fas fa-user-md"></i>
-                  <span>Customer List</span></a>
+                <a class="dropdown-item" href="{{route('customer_list')}}"><i class="fas fa-fw fa-users"></i>
+                  <span>User List</span></a>
+
+                <a class="dropdown-item" href="{{route('staff_list')}}"><i class="fas fa-user-md"></i>
+                  <span>Staff List</span></a>
                 <!-- <a class="dropdown-item" href="#"><i class="fas fa-plus-circle"></i>
                   <span>Assign Role</span></a> -->
               </div>
@@ -120,36 +123,21 @@
           </li>
       <!-- Medicine end -->
 
-<!-- Staff -->
-<li class="nav-item">
-  <a class="nav-link" href="#"><i class="fas fa-fw fa-users"></i>
-    <span>Staff</span></a>
-</li>
-
-
 
 <!-- Report -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a  class="nav-link" href="{{route('report')}}" >
           <i class="fas fa-fw fas fa-chart-line"></i>
-          <span>Report</span>
+          <span>Sales Report</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-folder"></i>
-            <span>Sales Report</span></a>
-          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-folder"></i>
-            <span>Sales Details Report</span></a>
-          <a class="dropdown-item" href="#"><i class="fas fa-fw fa-folder"></i>
-            <span>Expense Reports</span></a>
-        </div>
       </li>
 
   <!-- Profile -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#"><i class="fas fa-fw fa-user-tie"></i>
           <span>Profile</span></a>
-      </li>
+      </li> -->
 
 
     </ul>
@@ -189,7 +177,7 @@
       <footer class="sticky-footer">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>2020</span>
+            <span>PMS-2020</span>
           </div>
         </div>
       </footer>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Orders;
 
 class HomeController extends Controller
 {
@@ -29,5 +30,21 @@ class HomeController extends Controller
     public function test()
     {
         return view('test');
+    }
+
+    //--------------------------------Report--------------------------------------------------------
+    public function report()
+      {
+          return view('report');
+      }
+
+      public function create_reports(Request $request)
+    {
+      $from = $request -> from;
+      $to= $request -> to;
+      $reports = Orders::whereBetween('created_at', [$from, $to])->get();
+      return view('report',compact('reports'));
+
+      //dd($report);
     }
 }

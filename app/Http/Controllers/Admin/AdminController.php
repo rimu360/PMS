@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\MedicineCategories;
 use App\Medicines;
+use App\User;
+use App\Orders;
 use Image;
 
 class AdminController extends Controller
@@ -127,6 +129,33 @@ class AdminController extends Controller
         Medicines::findOrFail($request->id)->delete();
         return back()->with('success','Medicine Deleted Successfully.');
     }
+
+
+    //----------------------------------------customer list-----------------------------------
+    public function customer_list()
+    {
+      $customers = User::whererole('customer')->get();
+        return view('admin.customer_list',compact('customers'));
+    }
+
+    //----------------------------------------staff list-----------------------------------
+    public function staff_list()
+    {
+      $staffs = User::whererole('pharmacist')->get();
+        return view('admin.staff_list',compact('staffs'));
+    }
+
+    //--------------------------------------Assign role----------------------------------------
+
+    public function assign_role($id){
+
+        $user = User::whereRaw("id = '$id'")->update([
+          'role' => 'pharmacist',
+        ]);
+
+      return back();
+    }
+
 
 
 
