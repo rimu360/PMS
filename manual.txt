@@ -1,0 +1,18 @@
+email			password
+
+admin@gmail.com		admin1234
+customer@gmail.com	customer1234
+customer1@gmail.com	customer1234
+customer1@gmail.com	customer1234
+pharmacist@gmail.com	pharmacist1234
+
+
+
+
+credit card info
+
+name  			any
+card no			4242424242424242
+cvc 			3 digit any
+expiry month		any
+year			any future year
